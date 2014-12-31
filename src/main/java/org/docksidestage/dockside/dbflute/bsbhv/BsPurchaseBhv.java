@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2014 the Seasar Foundation and the Others.
+ * Copyright 2014-2015 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -74,8 +74,6 @@ public abstract class BsPurchaseBhv extends AbstractBehaviorWritable<Purchase, P
     /*df:beginQueryPath*/
     /** Example for Cursor and Paging select */
     public static final String PATH_selectPaymentCompletePurchase = "selectPaymentCompletePurchase";
-    /** specialty update */
-    public static final String PATH_whitebox_runtime_updatePurchaseChangedToPaymentComplete = "whitebox:runtime:updatePurchaseChangedToPaymentComplete";
     /*df:endQueryPath*/
 
     // ===================================================================================

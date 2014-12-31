@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2014 the Seasar Foundation and the Others.
+ * Copyright 2014-2015 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -72,16 +72,6 @@ public abstract class BsVendorCheckBhv extends AbstractBehaviorWritable<VendorCh
     //                                                                          Definition
     //                                                                          ==========
     /*df:beginQueryPath*/
-    /** vendor check */
-    public static final String PATH_whitebox_vendorcheck_selectSimpleVendorCheck = "whitebox:vendorcheck:selectSimpleVendorCheck";
-    /** vendor double byte on SQL */
-    public static final String PATH_whitebox_vendorcheck_selectVendorDoubleByteOnSql = "whitebox:vendorcheck:selectVendorDoubleByteOnSql";
-    /** vendor numeric decimal sum */
-    public static final String PATH_whitebox_vendorcheck_selectVendorNumericDecimalSum = "whitebox:vendorcheck:selectVendorNumericDecimalSum";
-    /** numeric integer sum */
-    public static final String PATH_whitebox_vendorcheck_selectVendorNumericIntegerSum = "whitebox:vendorcheck:selectVendorNumericIntegerSum";
-    /** vendor unsupported alias */
-    public static final String PATH_whitebox_vendorcheck_selectVendorUnsupportedAlias = "whitebox:vendorcheck:selectVendorUnsupportedAlias";
     /*df:endQueryPath*/
 
     // ===================================================================================

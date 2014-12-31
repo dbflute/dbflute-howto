@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2014 the Seasar Foundation and the Others.
+ * Copyright 2014-2015 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -90,50 +90,6 @@ public abstract class BsMemberBhv extends AbstractBehaviorWritable<Member, Membe
     public static final String PATH_selectUnpaidSummaryMember = "selectUnpaidSummaryMember";
     /** Force Withdrawal Update */
     public static final String PATH_updateMemberChangedToWithdrawalForcedly = "updateMemberChangedToWithdrawalForcedly";
-    /** The test of sub-directory outside-SQL */
-    public static final String PATH_subdirectory_selectSubDirectoryCheck = "subdirectory:selectSubDirectoryCheck";
-    /** generating common-column of customize-entity */
-    public static final String PATH_whitebox_cmentity_selectCommonColumnMember = "whitebox:cmentity:selectCommonColumnMember";
-    /** forced type of customize-entity */
-    public static final String PATH_whitebox_cmentity_selectForcedType = "whitebox:cmentity:selectForcedType";
-    /** primary key comment for customize-entity */
-    public static final String PATH_whitebox_cmentity_selectPrimaryKeyComment = "whitebox:cmentity:selectPrimaryKeyComment";
-    /** surprising comment that is similar to PK comment */
-    public static final String PATH_whitebox_cmentity_selectSurpriseSimilarPKComment = "whitebox:cmentity:selectSurpriseSimilarPKComment";
-    /** using Classification Hint */
-    public static final String PATH_whitebox_cmentity_selectUndetectableClassificationHint = "whitebox:cmentity:selectUndetectableClassificationHint";
-    /** compare date of parameter-bean */
-    public static final String PATH_whitebox_pmbean_selectCompareDate = "whitebox:pmbean:selectCompareDate";
-    /** map like search of parameter-bean */
-    public static final String PATH_whitebox_pmbean_selectMapLikeSearch = "whitebox:pmbean:selectMapLikeSearch";
-    /** parameter auto-detect */
-    public static final String PATH_whitebox_pmbean_selectParameterAutoDetect = "whitebox:pmbean:selectParameterAutoDetect";
-    /** definition order of parameter bean */
-    public static final String PATH_whitebox_pmbean_selectParameterDefOrder = "whitebox:pmbean:selectParameterDefOrder";
-    /** no auto-detect */
-    public static final String PATH_whitebox_pmbean_selectParameterNonAutoDetect = "whitebox:pmbean:selectParameterNonAutoDetect";
-    /** resolved package name of parameter-bean */
-    public static final String PATH_whitebox_pmbean_selectResolvedPackageName = "whitebox:pmbean:selectResolvedPackageName";
-    /** collection of parameter comment */
-    public static final String PATH_whitebox_pmcomment_selectPmCommentCollection = "whitebox:pmcomment:selectPmCommentCollection";
-    /** embedded variable of parameter comment */
-    public static final String PATH_whitebox_pmcomment_selectPmCommentEmbedded = "whitebox:pmcomment:selectPmCommentEmbedded";
-    /** DBMS hit with parameter comment */
-    public static final String PATH_whitebox_pmcomment_selectPmCommentHint = "whitebox:pmcomment:selectPmCommentHint";
-    /** IF comment for order-by */
-    public static final String PATH_whitebox_pmcomment_selectPmCommentOrderByIf = "whitebox:pmcomment:selectPmCommentOrderByIf";
-    /** parameter comment onparade */
-    public static final String PATH_whitebox_pmcomment_selectPmCommentPossible = "whitebox:pmcomment:selectPmCommentPossible";
-    /** wrong: not found property in bind variable */
-    public static final String PATH_whitebox_wrongexample_selectBindVariableNotFoundProperty = "whitebox:wrongexample:selectBindVariableNotFoundProperty";
-    /** wrong: not found end comment */
-    public static final String PATH_whitebox_wrongexample_selectEndCommentNotFound = "whitebox:wrongexample:selectEndCommentNotFound";
-    /** wrong: not boolean result in IF comment */
-    public static final String PATH_whitebox_wrongexample_selectIfCommentNotBooleanResult = "whitebox:wrongexample:selectIfCommentNotBooleanResult";
-    /** wrong: wrong expression in IF comment */
-    public static final String PATH_whitebox_wrongexample_selectIfCommentWrongExpression = "whitebox:wrongexample:selectIfCommentWrongExpression";
-    /** Frequently Mistake Pattern of ParameterBean */
-    public static final String PATH_whitebox_wrongexample_selectParameterFrequentlyMistakePattern = "whitebox:wrongexample:selectParameterFrequentlyMistakePattern";
     /*df:endQueryPath*/
 
     // ===================================================================================
