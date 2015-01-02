@@ -26,7 +26,6 @@ import org.dbflute.cbean.result.ListResultBean;
 import org.dbflute.cbean.result.PagingResultBean;
 import org.dbflute.util.DfCollectionUtil;
 import org.docksidestage.dockside.dbflute.exbhv.MemberBhv;
-import org.docksidestage.dockside.dbflute.exbhv.MemberServiceBhv;
 import org.docksidestage.dockside.dbflute.exbhv.MemberWithdrawalBhv;
 import org.docksidestage.dockside.dbflute.exbhv.cursor.PurchaseSummaryMemberCursor;
 import org.docksidestage.dockside.dbflute.exbhv.cursor.PurchaseSummaryMemberCursorHandler;
@@ -78,8 +77,6 @@ public class SpecialtySelectTest extends UnitContainerTestCase {
     // The behavior provides DB access methods. (defined as DI component)
     @Autowired
     private MemberBhv memberBhv;
-    @Autowired
-    private MemberServiceBhv memberServiceBhv;
     @Autowired
     private MemberWithdrawalBhv memberWithdrawalBhv;
 
