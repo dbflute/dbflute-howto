@@ -49,7 +49,7 @@ public class SpecialtyUpdateTest extends UnitContainerTestCase {
     // ===================================================================================
     //                                                                      Varying Update
     //                                                                      ==============
-    // TODO jflute example: specialty update
+    // TODO jflute howto: specialty update
     public void test_varyingUpdate_SelfCalculation_increment() throws Exception {
         // ## Arrange ##
         Purchase before = purchaseBhv.selectByPK(3L).get();
