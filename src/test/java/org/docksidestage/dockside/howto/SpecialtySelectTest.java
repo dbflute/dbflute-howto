@@ -284,7 +284,7 @@ public class SpecialtySelectTest extends UnitContainerTestCase {
                 }, null);
             });
             cb.columnQuery(colCB -> {
-                colCB.specify().derivedPurchase().max(purchaseCB -> {
+                colCB.specify().derivedPurchase().min(purchaseCB -> {
                     purchaseCB.specify().columnPurchaseDatetime();
                     purchaseCB.query().setPaymentCompleteFlg_Equal_True();
                 }, null);
