@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.dbflute.dftest</groupId>
-	<artifactId>dbflute-test-active-dockside</artifactId>
+	<artifactId>dbflute-howto</artifactId>
 	<version>1.1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>DBFlute Test as Active Dockside</name>
-	<description>test project as active stage named 'Dockside' for using Spring and H2</description>
-	<url>https://github.com/dbflute-test/dbflute-test-active-dockside</url>
+	<name>DBFlute HowTo</name>
+	<description>how-to project using Spring and H2</description>
+	<url>https://github.com/dbflute/dbflute-howto</url>
 	<inceptionYear>2014</inceptionYear>
 
 	<properties>
@@ -40,7 +40,7 @@
 
 	<issueManagement>
 		<system>Github</system>
-		<url>https://github.com/dbflute-test/dbflute-test-active-dockside/issues</url>
+		<url>https://github.com/dbflute/dbflute-howto/issues</url>
 	</issueManagement>
 	<mailingLists>
 		<mailingList>
