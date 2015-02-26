@@ -228,9 +228,9 @@ public class MemberSecurityDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                           Type Name
     //                                                                           =========
-    public String getEntityTypeName() { return "org.docksidestage.dockside.dbflute.exentity.MemberSecurity"; }
-    public String getConditionBeanTypeName() { return "org.docksidestage.dockside.dbflute.cbean.MemberSecurityCB"; }
-    public String getBehaviorTypeName() { return "org.docksidestage.dockside.dbflute.exbhv.MemberSecurityBhv"; }
+    public String getEntityTypeName() { return "org.docksidestage.howto.dbflute.exentity.MemberSecurity"; }
+    public String getConditionBeanTypeName() { return "org.docksidestage.howto.dbflute.cbean.MemberSecurityCB"; }
+    public String getBehaviorTypeName() { return "org.docksidestage.howto.dbflute.exbhv.MemberSecurityBhv"; }
 
     // ===================================================================================
     //                                                                         Object Type

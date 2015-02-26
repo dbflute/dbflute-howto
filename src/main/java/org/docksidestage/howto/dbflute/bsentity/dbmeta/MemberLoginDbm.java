@@ -114,7 +114,7 @@ public class MemberLoginDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                         Column Info
     //                                                                         ===========
-    protected final ColumnInfo _columnMemberLoginId = cci("MEMBER_LOGIN_ID", "MEMBER_LOGIN_ID", null, "会員ログインID", Long.class, "memberLoginId", null, true, true, true, "BIGINT", 19, 0, "NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_C96618A7_8372_4424_8369_9B3A5AC70572", false, null, null, null, null, null, false);
+    protected final ColumnInfo _columnMemberLoginId = cci("MEMBER_LOGIN_ID", "MEMBER_LOGIN_ID", null, "会員ログインID", Long.class, "memberLoginId", null, true, true, true, "BIGINT", 19, 0, "NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_D97170B9_6D50_406E_BF2F_1258A4FA501D", false, null, null, null, null, null, false);
     protected final ColumnInfo _columnMemberId = cci("MEMBER_ID", "MEMBER_ID", null, "会員ID", Integer.class, "memberId", null, false, false, true, "INTEGER", 10, 0, null, false, null, null, "member", null, null, false);
     protected final ColumnInfo _columnLoginDatetime = cci("LOGIN_DATETIME", "LOGIN_DATETIME", null, "ログイン日時", java.time.LocalDateTime.class, "loginDatetime", null, false, false, true, "TIMESTAMP", 23, 10, null, false, null, null, null, null, null, false);
     protected final ColumnInfo _columnMobileLoginFlg = cci("MOBILE_LOGIN_FLG", "MOBILE_LOGIN_FLG", null, "モバイルログインフラグ", Integer.class, "mobileLoginFlg", null, false, false, true, "INTEGER", 10, 0, null, false, null, null, null, null, CDef.DefMeta.Flg, false);
@@ -215,9 +215,9 @@ public class MemberLoginDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                           Type Name
     //                                                                           =========
-    public String getEntityTypeName() { return "org.docksidestage.dockside.dbflute.exentity.MemberLogin"; }
-    public String getConditionBeanTypeName() { return "org.docksidestage.dockside.dbflute.cbean.MemberLoginCB"; }
-    public String getBehaviorTypeName() { return "org.docksidestage.dockside.dbflute.exbhv.MemberLoginBhv"; }
+    public String getEntityTypeName() { return "org.docksidestage.howto.dbflute.exentity.MemberLogin"; }
+    public String getConditionBeanTypeName() { return "org.docksidestage.howto.dbflute.cbean.MemberLoginCB"; }
+    public String getBehaviorTypeName() { return "org.docksidestage.howto.dbflute.exbhv.MemberLoginBhv"; }
 
     // ===================================================================================
     //                                                                         Object Type

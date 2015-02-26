@@ -166,7 +166,7 @@ public class PaymentCompletePurchaseDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                           Type Name
     //                                                                           =========
-    public String getEntityTypeName() { return "org.docksidestage.dockside.dbflute.exentity.customize.PaymentCompletePurchase"; }
+    public String getEntityTypeName() { return "org.docksidestage.howto.dbflute.exentity.customize.PaymentCompletePurchase"; }
     public String getConditionBeanTypeName() { return null; }
     public String getBehaviorTypeName() { return null; }
 

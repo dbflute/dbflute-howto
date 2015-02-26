@@ -23,9 +23,9 @@ import org.dbflute.dbmeta.DBMeta;
 import org.dbflute.dbmeta.AbstractEntity;
 import org.dbflute.dbmeta.accessory.DomainEntity;
 import org.dbflute.optional.OptionalEntity;
-import org.docksidestage.howto.dbflute.allcommon.CDef;
-import org.docksidestage.howto.dbflute.allcommon.DBMetaInstanceHandler;
 import org.docksidestage.howto.dbflute.allcommon.EntityDefinedCommonColumn;
+import org.docksidestage.howto.dbflute.allcommon.DBMetaInstanceHandler;
+import org.docksidestage.howto.dbflute.allcommon.CDef;
 import org.docksidestage.howto.dbflute.exentity.*;
 
 /**

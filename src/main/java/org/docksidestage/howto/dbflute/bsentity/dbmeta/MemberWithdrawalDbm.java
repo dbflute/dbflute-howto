@@ -237,9 +237,9 @@ public class MemberWithdrawalDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                           Type Name
     //                                                                           =========
-    public String getEntityTypeName() { return "org.docksidestage.dockside.dbflute.exentity.MemberWithdrawal"; }
-    public String getConditionBeanTypeName() { return "org.docksidestage.dockside.dbflute.cbean.MemberWithdrawalCB"; }
-    public String getBehaviorTypeName() { return "org.docksidestage.dockside.dbflute.exbhv.MemberWithdrawalBhv"; }
+    public String getEntityTypeName() { return "org.docksidestage.howto.dbflute.exentity.MemberWithdrawal"; }
+    public String getConditionBeanTypeName() { return "org.docksidestage.howto.dbflute.cbean.MemberWithdrawalCB"; }
+    public String getBehaviorTypeName() { return "org.docksidestage.howto.dbflute.exbhv.MemberWithdrawalBhv"; }
 
     // ===================================================================================
     //                                                                         Object Type

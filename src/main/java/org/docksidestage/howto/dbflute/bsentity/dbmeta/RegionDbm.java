@@ -150,9 +150,9 @@ public class RegionDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                           Type Name
     //                                                                           =========
-    public String getEntityTypeName() { return "org.docksidestage.dockside.dbflute.exentity.Region"; }
-    public String getConditionBeanTypeName() { return "org.docksidestage.dockside.dbflute.cbean.RegionCB"; }
-    public String getBehaviorTypeName() { return "org.docksidestage.dockside.dbflute.exbhv.RegionBhv"; }
+    public String getEntityTypeName() { return "org.docksidestage.howto.dbflute.exentity.Region"; }
+    public String getConditionBeanTypeName() { return "org.docksidestage.howto.dbflute.cbean.RegionCB"; }
+    public String getBehaviorTypeName() { return "org.docksidestage.howto.dbflute.exbhv.RegionBhv"; }
 
     // ===================================================================================
     //                                                                         Object Type

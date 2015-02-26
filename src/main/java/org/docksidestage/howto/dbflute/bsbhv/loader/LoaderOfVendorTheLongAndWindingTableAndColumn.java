@@ -19,9 +19,9 @@ import java.util.List;
 
 import org.dbflute.bhv.*;
 import org.dbflute.bhv.referrer.*;
-import org.docksidestage.howto.dbflute.cbean.*;
 import org.docksidestage.howto.dbflute.exbhv.*;
 import org.docksidestage.howto.dbflute.exentity.*;
+import org.docksidestage.howto.dbflute.cbean.*;
 
 /**
  * The referrer loader of VENDOR_THE_LONG_AND_WINDING_TABLE_AND_COLUMN as TABLE. <br>

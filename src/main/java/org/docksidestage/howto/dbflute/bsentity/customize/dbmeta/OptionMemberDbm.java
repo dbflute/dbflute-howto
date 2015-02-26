@@ -206,7 +206,7 @@ public class OptionMemberDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                           Type Name
     //                                                                           =========
-    public String getEntityTypeName() { return "org.docksidestage.dockside.dbflute.exentity.customize.OptionMember"; }
+    public String getEntityTypeName() { return "org.docksidestage.howto.dbflute.exentity.customize.OptionMember"; }
     public String getConditionBeanTypeName() { return null; }
     public String getBehaviorTypeName() { return null; }
 

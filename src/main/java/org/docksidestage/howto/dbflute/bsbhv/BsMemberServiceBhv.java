@@ -28,11 +28,11 @@ import org.dbflute.cbean.result.*;
 import org.dbflute.exception.*;
 import org.dbflute.optional.OptionalEntity;
 import org.dbflute.outsidesql.executor.*;
+import org.docksidestage.howto.dbflute.exbhv.*;
 import org.docksidestage.howto.dbflute.bsbhv.loader.*;
+import org.docksidestage.howto.dbflute.exentity.*;
 import org.docksidestage.howto.dbflute.bsentity.dbmeta.*;
 import org.docksidestage.howto.dbflute.cbean.*;
-import org.docksidestage.howto.dbflute.exbhv.*;
-import org.docksidestage.howto.dbflute.exentity.*;
 
 /**
  * The behavior of (会員サービス)MEMBER_SERVICE as TABLE. <br>

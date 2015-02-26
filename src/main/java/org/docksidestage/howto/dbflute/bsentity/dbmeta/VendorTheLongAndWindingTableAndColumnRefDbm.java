@@ -169,9 +169,9 @@ public class VendorTheLongAndWindingTableAndColumnRefDbm extends AbstractDBMeta 
     // ===================================================================================
     //                                                                           Type Name
     //                                                                           =========
-    public String getEntityTypeName() { return "org.docksidestage.dockside.dbflute.exentity.VendorTheLongAndWindingTableAndColumnRef"; }
-    public String getConditionBeanTypeName() { return "org.docksidestage.dockside.dbflute.cbean.VendorTheLongAndWindingTableAndColumnRefCB"; }
-    public String getBehaviorTypeName() { return "org.docksidestage.dockside.dbflute.exbhv.VendorTheLongAndWindingTableAndColumnRefBhv"; }
+    public String getEntityTypeName() { return "org.docksidestage.howto.dbflute.exentity.VendorTheLongAndWindingTableAndColumnRef"; }
+    public String getConditionBeanTypeName() { return "org.docksidestage.howto.dbflute.cbean.VendorTheLongAndWindingTableAndColumnRefCB"; }
+    public String getBehaviorTypeName() { return "org.docksidestage.howto.dbflute.exbhv.VendorTheLongAndWindingTableAndColumnRefBhv"; }
 
     // ===================================================================================
     //                                                                         Object Type

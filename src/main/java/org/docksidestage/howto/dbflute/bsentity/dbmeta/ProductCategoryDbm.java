@@ -179,9 +179,9 @@ public class ProductCategoryDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                           Type Name
     //                                                                           =========
-    public String getEntityTypeName() { return "org.docksidestage.dockside.dbflute.exentity.ProductCategory"; }
-    public String getConditionBeanTypeName() { return "org.docksidestage.dockside.dbflute.cbean.ProductCategoryCB"; }
-    public String getBehaviorTypeName() { return "org.docksidestage.dockside.dbflute.exbhv.ProductCategoryBhv"; }
+    public String getEntityTypeName() { return "org.docksidestage.howto.dbflute.exentity.ProductCategory"; }
+    public String getConditionBeanTypeName() { return "org.docksidestage.howto.dbflute.cbean.ProductCategoryCB"; }
+    public String getBehaviorTypeName() { return "org.docksidestage.howto.dbflute.exbhv.ProductCategoryBhv"; }
 
     // ===================================================================================
     //                                                                         Object Type

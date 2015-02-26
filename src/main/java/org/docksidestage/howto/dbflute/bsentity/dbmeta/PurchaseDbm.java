@@ -114,7 +114,7 @@ public class PurchaseDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                         Column Info
     //                                                                         ===========
-    protected final ColumnInfo _columnPurchaseId = cci("PURCHASE_ID", "PURCHASE_ID", null, null, Long.class, "purchaseId", null, true, true, true, "BIGINT", 19, 0, "NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_A0BCBD9D_A83C_4A1A_A086_59BC20854115", false, null, null, null, "purchasePaymentList", null, false);
+    protected final ColumnInfo _columnPurchaseId = cci("PURCHASE_ID", "PURCHASE_ID", null, null, Long.class, "purchaseId", null, true, true, true, "BIGINT", 19, 0, "NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_8B93EA73_0077_48DB_915E_CC74C4D9E3D8", false, null, null, null, "purchasePaymentList", null, false);
     protected final ColumnInfo _columnMemberId = cci("MEMBER_ID", "MEMBER_ID", null, "会員ID", Integer.class, "memberId", null, false, false, true, "INTEGER", 10, 0, null, false, null, null, "member", null, null, false);
     protected final ColumnInfo _columnProductId = cci("PRODUCT_ID", "PRODUCT_ID", null, "商品ID", Integer.class, "productId", null, false, false, true, "INTEGER", 10, 0, null, false, null, null, "product,summaryProduct", null, null, false);
     protected final ColumnInfo _columnPurchaseDatetime = cci("PURCHASE_DATETIME", "PURCHASE_DATETIME", null, "購入日時", java.time.LocalDateTime.class, "purchaseDatetime", null, false, false, true, "TIMESTAMP", 23, 10, null, false, null, null, null, null, null, false);
@@ -290,9 +290,9 @@ public class PurchaseDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                           Type Name
     //                                                                           =========
-    public String getEntityTypeName() { return "org.docksidestage.dockside.dbflute.exentity.Purchase"; }
-    public String getConditionBeanTypeName() { return "org.docksidestage.dockside.dbflute.cbean.PurchaseCB"; }
-    public String getBehaviorTypeName() { return "org.docksidestage.dockside.dbflute.exbhv.PurchaseBhv"; }
+    public String getEntityTypeName() { return "org.docksidestage.howto.dbflute.exentity.Purchase"; }
+    public String getConditionBeanTypeName() { return "org.docksidestage.howto.dbflute.cbean.PurchaseCB"; }
+    public String getBehaviorTypeName() { return "org.docksidestage.howto.dbflute.exbhv.PurchaseBhv"; }
 
     // ===================================================================================
     //                                                                         Object Type
