@@ -2,7 +2,8 @@ DBFlute HowTo
 =======================
 How-to project for DBFlute
 
-DBFlute site: http://dbflute.seasar.org/
+DBFlute:  
+http://dbflute.seasar.org/
 
 # Quick Trial
 you can clone the example project of DBFlute:  
