@@ -63,6 +63,12 @@ public class DBMetaInstanceHandler implements DBMetaProvider {
         tmpMap.put("SERVICE_RANK", "org.docksidestage.howto.dbflute.bsentity.dbmeta.ServiceRankDbm");
         tmpMap.put("SUMMARY_PRODUCT", "org.docksidestage.howto.dbflute.bsentity.dbmeta.SummaryProductDbm");
         tmpMap.put("SUMMARY_WITHDRAWAL", "org.docksidestage.howto.dbflute.bsentity.dbmeta.SummaryWithdrawalDbm");
+        tmpMap.put("VENDOR_$_DOLLAR", "org.docksidestage.howto.dbflute.bsentity.dbmeta.Vendor$DollarDbm");
+        tmpMap.put("VENDOR_CHECK", "org.docksidestage.howto.dbflute.bsentity.dbmeta.VendorCheckDbm");
+        tmpMap.put("VENDOR_IDENTITY_ONLY", "org.docksidestage.howto.dbflute.bsentity.dbmeta.VendorIdentityOnlyDbm");
+        tmpMap.put("VENDOR_PRIMARY_KEY_ONLY", "org.docksidestage.howto.dbflute.bsentity.dbmeta.VendorPrimaryKeyOnlyDbm");
+        tmpMap.put("VENDOR_THE_LONG_AND_WINDING_TABLE_AND_COLUMN", "org.docksidestage.howto.dbflute.bsentity.dbmeta.VendorTheLongAndWindingTableAndColumnDbm");
+        tmpMap.put("VENDOR_THE_LONG_AND_WINDING_TABLE_AND_COLUMN_REF", "org.docksidestage.howto.dbflute.bsentity.dbmeta.VendorTheLongAndWindingTableAndColumnRefDbm");
         tmpMap.put("WITHDRAWAL_REASON", "org.docksidestage.howto.dbflute.bsentity.dbmeta.WithdrawalReasonDbm");
         _tableDbNameClassNameMap = Collections.unmodifiableMap(tmpMap);
     }
