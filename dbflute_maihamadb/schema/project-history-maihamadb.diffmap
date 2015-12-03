@@ -1,4 +1,52 @@
 map:{
+    ; 2015/10/14 23:07:02 = map:{
+        ; diffDate = 2015/10/14 23:07:02
+        ; tableCount = map:{
+            ; next = 18
+            ; previous = 24
+        }
+        ; tableDiff = map:{
+            ; VENDOR_$_DOLLAR = map:{
+                ; tableName = VENDOR_$_DOLLAR
+                ; diffType = DELETE
+            }
+            ; VENDOR_CHECK = map:{
+                ; tableName = VENDOR_CHECK
+                ; diffType = DELETE
+            }
+            ; VENDOR_IDENTITY_ONLY = map:{
+                ; tableName = VENDOR_IDENTITY_ONLY
+                ; diffType = DELETE
+            }
+            ; VENDOR_PRIMARY_KEY_ONLY = map:{
+                ; tableName = VENDOR_PRIMARY_KEY_ONLY
+                ; diffType = DELETE
+            }
+            ; VENDOR_THE_LONG_AND_WINDING_TABLE_AND_COLUMN = map:{
+                ; tableName = VENDOR_THE_LONG_AND_WINDING_TABLE_AND_COLUMN
+                ; diffType = DELETE
+            }
+            ; VENDOR_THE_LONG_AND_WINDING_TABLE_AND_COLUMN_REF = map:{
+                ; tableName = VENDOR_THE_LONG_AND_WINDING_TABLE_AND_COLUMN_REF
+                ; diffType = DELETE
+            }
+        }
+    }
+    ; 2015/09/25 16:42:39 = map:{
+        ; diffDate = 2015/09/25 16:42:39
+        ; tableDiff = map:{
+            ; MEMBER_WITHDRAWAL = map:{
+                ; tableName = MEMBER_WITHDRAWAL
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; VERSION_NO = map:{
+                        ; columnName = VERSION_NO
+                        ; diffType = DELETE
+                    }
+                }
+            }
+        }
+    }
     ; 2014/06/16 23:42:26 = map:{
         ; diffDate = 2014/06/16 23:42:26
         ; tableCount = map:{
