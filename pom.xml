@@ -121,9 +121,10 @@
 			<plugin>
 				<groupId>org.dbflute</groupId>
 				<artifactId>dbflute-maven-plugin</artifactId>
-				<version>1.1.0-RC1</version>
+				<version>1.1.0</version>
 				<configuration>
 					<clientProject>maihamadb</clientProject>
+					<packageBase>org.docksidestage.howto.dbflute</packageBase>
 				</configuration>
 			</plugin>
 		</plugins>
