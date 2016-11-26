@@ -22,7 +22,7 @@ import org.dbflute.bhv.BehaviorWritable;
 import org.dbflute.bhv.writable.DeleteOption;
 import org.dbflute.cbean.ConditionBean;
 import org.dbflute.exception.NonSpecifiedColumnAccessException;
-import org.dbflute.utflute.core.smallhelper.ExceptionExaminer;
+import org.dbflute.utflute.core.exception.ExceptionExaminer;
 import org.dbflute.utflute.spring.ContainerTestCase;
 import org.docksidestage.howto.JdbcBeansJavaConfig;
 import org.docksidestage.howto.dbflute.allcommon.DBFluteBeansJavaConfig;
@@ -34,6 +34,7 @@ import org.docksidestage.howto.dbflute.exbhv.MemberServiceBhv;
 import org.docksidestage.howto.dbflute.exbhv.MemberWithdrawalBhv;
 import org.docksidestage.howto.dbflute.exbhv.PurchaseBhv;
 import org.docksidestage.howto.dbflute.exbhv.PurchasePaymentBhv;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -48,6 +49,7 @@ public abstract class UnitContainerTestCase extends ContainerTestCase {
     //                                                                           Attribute
     //                                                                           =========
     private final Stack<ConditionBean> _cbStack = new Stack<ConditionBean>();
+    @Autowired
     private BehaviorSelector _behaviorSelector;
 
     // ===================================================================================
