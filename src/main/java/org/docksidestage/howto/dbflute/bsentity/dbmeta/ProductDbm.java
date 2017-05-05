@@ -63,8 +63,7 @@ public class ProductDbm extends AbstractDBMeta {
         setupEpg(_epgMap, et -> ((Product)et).getProductHandleCode(), (et, vl) -> ((Product)et).setProductHandleCode((String)vl), "productHandleCode");
         setupEpg(_epgMap, et -> ((Product)et).getProductCategoryCode(), (et, vl) -> ((Product)et).setProductCategoryCode((String)vl), "productCategoryCode");
         setupEpg(_epgMap, et -> ((Product)et).getProductStatusCode(), (et, vl) -> {
-            ColumnInfo col = columnProductStatusCode();
-            CDef.ProductStatus cls = (CDef.ProductStatus)gcls(et, col, vl);
+            CDef.ProductStatus cls = (CDef.ProductStatus)gcls(et, columnProductStatusCode(), vl);
             if (cls != null) {
                 ((Product)et).setProductStatusCodeAsProductStatus(cls);
             } else {
@@ -112,7 +111,7 @@ public class ProductDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                         Column Info
     //                                                                         ===========
-    protected final ColumnInfo _columnProductId = cci("PRODUCT_ID", "PRODUCT_ID", null, null, Integer.class, "productId", null, true, true, true, "INTEGER", 10, 0, "NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_1D32A287_6EBA_44F7_8A77_6AAB5CF82299", false, null, null, null, "purchaseList", null, false);
+    protected final ColumnInfo _columnProductId = cci("PRODUCT_ID", "PRODUCT_ID", null, null, Integer.class, "productId", null, true, true, true, "INTEGER", 10, 0, "NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_C4C02B7F_F6BB_4735_9099_3F412D028348", false, null, null, null, "purchaseList", null, false);
     protected final ColumnInfo _columnProductName = cci("PRODUCT_NAME", "PRODUCT_NAME", null, "商品名称", String.class, "productName", null, false, false, true, "VARCHAR", 50, 0, null, false, null, null, null, null, null, false);
     protected final ColumnInfo _columnProductHandleCode = cci("PRODUCT_HANDLE_CODE", "PRODUCT_HANDLE_CODE", null, "商品ハンドルコード", String.class, "productHandleCode", null, false, false, true, "VARCHAR", 100, 0, null, false, null, null, null, null, null, false);
     protected final ColumnInfo _columnProductCategoryCode = cci("PRODUCT_CATEGORY_CODE", "PRODUCT_CATEGORY_CODE", null, null, String.class, "productCategoryCode", null, false, false, true, "CHAR", 3, 0, null, false, null, null, "productCategory", null, null, false);

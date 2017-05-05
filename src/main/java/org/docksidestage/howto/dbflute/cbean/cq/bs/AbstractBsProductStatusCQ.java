@@ -157,7 +157,7 @@ public abstract class AbstractBsProductStatusCQ extends AbstractConditionQuery {
      * (商品ステータスコード)PRODUCT_STATUS_CODE: {PK, NotNull, CHAR(3), classification=ProductStatus}
      * @param productStatusCodeList The collection of productStatusCode as inScope. (NullAllowed: if null (or empty), no condition)
      */
-    public void setProductStatusCode_InScope(Collection<String> productStatusCodeList) {
+    protected void setProductStatusCode_InScope(Collection<String> productStatusCodeList) {
         doSetProductStatusCode_InScope(productStatusCodeList);
     }
 
@@ -180,7 +180,7 @@ public abstract class AbstractBsProductStatusCQ extends AbstractConditionQuery {
      * (商品ステータスコード)PRODUCT_STATUS_CODE: {PK, NotNull, CHAR(3), classification=ProductStatus}
      * @param productStatusCodeList The collection of productStatusCode as notInScope. (NullAllowed: if null (or empty), no condition)
      */
-    public void setProductStatusCode_NotInScope(Collection<String> productStatusCodeList) {
+    protected void setProductStatusCode_NotInScope(Collection<String> productStatusCodeList) {
         doSetProductStatusCode_NotInScope(productStatusCodeList);
     }
 
@@ -653,7 +653,6 @@ public abstract class AbstractBsProductStatusCQ extends AbstractConditionQuery {
      *     <span style="color: #553000">purchaseCB</span>.query().setPaymentCompleteFlg_Equal_True();
      * });
      * </pre> 
-     * </pre>
      * @return The object to set up a function. (NotNull)
      */
     public HpSLCFunction<ProductStatusCB> scalar_GreaterThan() {
@@ -669,7 +668,6 @@ public abstract class AbstractBsProductStatusCQ extends AbstractConditionQuery {
      *     <span style="color: #553000">purchaseCB</span>.query().setPaymentCompleteFlg_Equal_True();
      * });
      * </pre> 
-     * </pre>
      * @return The object to set up a function. (NotNull)
      */
     public HpSLCFunction<ProductStatusCB> scalar_LessThan() {
