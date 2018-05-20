@@ -1,12 +1,12 @@
 map:{
     ; 2015/10/14 23:07:02 = map:{
         ; diffDate = 2015/10/14 23:07:02
-        ; diffAuthor = jflute
-        ; diffGitBranch = develop
         ; tableCount = map:{
             ; next = 18
             ; previous = 24
         }
+        ; diffAuthor = jflute
+        ; diffGitBranch = develop
         ; tableDiff = map:{
             ; VENDOR_$_DOLLAR = map:{
                 ; tableName = VENDOR_$_DOLLAR
@@ -57,6 +57,8 @@ map:{
             ; next = 24
             ; previous = 23
         }
+        ; diffAuthor = jflute
+        ; diffGitBranch = develop
         ; tableDiff = map:{
             ; PRODUCT_CATEGORY = map:{
                 ; tableName = PRODUCT_CATEGORY
@@ -80,6 +82,8 @@ map:{
             ; next = 23
             ; previous = 24
         }
+        ; diffAuthor = jflute
+        ; diffGitBranch = develop
         ; tableDiff = map:{
             ; PRODUCT = map:{
                 ; tableName = PRODUCT
@@ -99,6 +103,8 @@ map:{
     }
     ; 2014/05/31 13:46:23 = map:{
         ; diffDate = 2014/05/31 13:46:23
+        ; diffAuthor = jflute
+        ; diffGitBranch = develop
         ; tableDiff = map:{
             ; PURCHASE_PAYMENT = map:{
                 ; tableName = PURCHASE_PAYMENT
@@ -114,6 +120,8 @@ map:{
     }
     ; 2014/05/30 21:51:01 = map:{
         ; diffDate = 2014/05/30 21:51:01
+        ; diffAuthor = jflute
+        ; diffGitBranch = develop
         ; tableDiff = map:{
             ; PURCHASE_PAYMENT = map:{
                 ; tableName = PURCHASE_PAYMENT
@@ -157,6 +165,8 @@ map:{
             ; next = 24
             ; previous = 23
         }
+        ; diffAuthor = jflute
+        ; diffGitBranch = develop
         ; tableDiff = map:{
             ; PURCHASE_PAYMENT = map:{
                 ; tableName = PURCHASE_PAYMENT
