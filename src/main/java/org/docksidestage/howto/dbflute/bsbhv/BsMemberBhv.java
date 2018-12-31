@@ -74,24 +74,24 @@ public abstract class BsMemberBhv extends AbstractBehaviorWritable<Member, Membe
     //                                                                          Definition
     //                                                                          ==========
     /*df:beginQueryPath*/
-    /** The example for select using domain entity */
-    public static final String PATH_selectDomainMember = "selectDomainMember";
-    /** The example for selecting scalar value */
-    public static final String PATH_selectLatestFormalizedDatetime = "selectLatestFormalizedDatetime";
-    /** The example for scalar select */
-    public static final String PATH_selectMemberName = "selectMemberName";
-    /** The example for select using options */
-    public static final String PATH_selectOptionMember = "selectOptionMember";
+    /** Example for AutoPaging */
+    public static final String PATH_selectUnpaidSummaryMember = "selectUnpaidSummaryMember";
     /** Example for ManualPaging */
     public static final String PATH_selectPurchaseMaxPriceMember = "selectPurchaseMaxPriceMember";
     /** Example for CursorSelect */
     public static final String PATH_selectPurchaseSummaryMember = "selectPurchaseSummaryMember";
-    /** Example for Simple Select */
-    public static final String PATH_selectSimpleMember = "selectSimpleMember";
-    /** Example for AutoPaging */
-    public static final String PATH_selectUnpaidSummaryMember = "selectUnpaidSummaryMember";
+    /** The example for select using options */
+    public static final String PATH_selectOptionMember = "selectOptionMember";
+    /** The example for select using domain entity */
+    public static final String PATH_selectDomainMember = "selectDomainMember";
+    /** The example for selecting scalar value */
+    public static final String PATH_selectLatestFormalizedDatetime = "selectLatestFormalizedDatetime";
     /** Force Withdrawal Update */
     public static final String PATH_updateMemberChangedToWithdrawalForcedly = "updateMemberChangedToWithdrawalForcedly";
+    /** Example for Simple Select */
+    public static final String PATH_selectSimpleMember = "selectSimpleMember";
+    /** The example for scalar select */
+    public static final String PATH_selectMemberName = "selectMemberName";
     /*df:endQueryPath*/
 
     // ===================================================================================
