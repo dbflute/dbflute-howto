@@ -193,7 +193,7 @@ public class HowToUpdateTest extends UnitContainerTestCase {
         // ## Assert ##
         assertEquals(3, result.length);
         for (Member member : memberList) {
-            log(member.getMemberId() + member.getMemberName());
+            log(member.getMemberId(), member.getMemberName());
         }
     }
 
