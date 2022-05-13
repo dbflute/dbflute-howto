@@ -3,7 +3,7 @@
 #
 # The database information for the tasks of DBFlute.
 # You should specify before your first generating.
-# 
+#
 # o driver   -- The class name of JDBC-Driver.
 # o url      -- The URL for connecting database.
 # o schema   -- The schema name.
@@ -24,7 +24,7 @@ map:{
     # /- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # o propertiesMap: (NotRequired - Default map:{})
     #  The properties that depends on the database.
-    # 
+    #
     ; propertiesMap = map:{
         # If you use Oracle and its Synonym, specify this property.
         #; includeSynonyms=true
@@ -34,9 +34,9 @@ map:{
     # /- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # o variousMap: (NotRequired - Default map:{})
     #  The various settings about JDBC task mainly.
-    # 
+    #
     ; variousMap = map:{
-        # o objectTypeTargetList: (NotRequired - Default 'list:{TABLE;VIEW}')
+        # o objectTypeTargetList: (NotRequired - Default list:{TABLE;VIEW})
         #  If you want to include other object types in generating target,
         #  you should specify the list of included object types as adding.
         #    e.g. Synonym of Oracle --> list:{TABLE ; VIEW ; SYNONYM}
@@ -46,7 +46,7 @@ map:{
         #
         #; objectTypeTargetList = list:{TABLE ; VIEW}
 
-        # o tableExceptList: (NotRequired - Default 'list:{}')
+        # o tableExceptList: (NotRequired - Default list:{})
         #  If you want to exclude some tables in generating target,
         #  you should specify the list of excepted table hints.
         #    e.g. list:{PRODUCT_STATUS ; prefix:TMP_}
@@ -58,9 +58,9 @@ map:{
         #  But you can specify the '@gen' suffix that means generate-only except.
         #  A table with the mark can be treated as documents but no generating classes.
         #
-        #; tableExceptList = list:{FOO_TABLE@gen ; prefix:FOO_@gen ; suffix:_FOO ; contain:_FOO_}
+        #; tableExceptList = list:{suffix:TABLE_EXCEPT_GEN_ONLY@gen ; WHITE_TABLE_EXCEPT_NOMETA}
 
-        # o tableTargetList: (NotRequired - Default 'list:{}')
+        # o tableTargetList: (NotRequired - Default list:{})
         #  If you want to include some tables in generating target expressly,
         #  you should specify the list of target table hints.
         #    e.g. list:{PURCHASE ; contain:MEMBER}
@@ -69,17 +69,18 @@ map:{
         #
         #; tableTargetList = list:{FOO_TABLE ; prefix:FOO_ ; suffix:_FOO ; contain:_FOO_}
 
-        # o columnExceptMap: (NotRequired - Default 'map:{}')
+        # o columnExceptMap: (NotRequired - Default map:{})
         #  If you want to exclude some columns in generating target,
         #  you should specify the list of excepted column hints.
         #    e.g. map:{HEAVY_MASTER = list:{APP_NOT_USED_ID; suffix:_IMAGE}}
         #  This is only for the main schema. Additional schemas are unconcerned.
         #
         #; columnExceptMap = map:{
-        #    ; FOO_TABLE = list:{FOO_COLUMN ; prefix:FOO_ ; suffix:_FOO ; contain:_FOO_}
+        #    ; VENDOR_CHECK = list:{COLUMN_EXCEPT_TEST}
+        #    ; WHITE_COLUMN_EXCEPT_GEN_ONLY = list:{suffix:GEN_ONLY@gen}
         #}
 
-        # o additionalSchemaMap: (NotRequired - Default 'map:{}')
+        # o additionalSchemaMap: (NotRequired - Default map:{})
         #  If you want to include other schemas in generating target,
         #  you should specify the map of included schemas.
         #  Additional schemas have original settings apart from the main schema.
@@ -87,23 +88,26 @@ map:{
         #  tableTargetList, and columnExceptMap.
         #  They have the same specification as ones of the main schema.
         #  Elements of this map are as below: 
-        #    o objectTypeTargetList: (NotRequired - Default 'map:{TABLE;VIEW}')
-        #    o tableExceptList: (NotRequired - Default 'list:{}')
-        #    o tableTargetList: (NotRequired - Default 'list:{}')
-        #    o columnExceptMap: (NotRequired - Default 'map:{}')
+        #    o objectTypeTargetList: (NotRequired - Default map:{TABLE;VIEW})
+        #    o tableExceptList: (NotRequired - Default list:{})
+        #    o tableTargetList: (NotRequired - Default list:{})
+        #    o columnExceptMap: (NotRequired - Default map:{})
         #    o isSuppressCommonColumn: (NotRequired - Default false)
         #    o isSuppressProcedure: (NotRequired - Default false)
         #
         #; additionalSchemaMap = map:{
-        #    ; NEXTEXAMPLEDB = map:{
+        #    ; nextexampledb.$$NoNameSchema$$ = map:{
         #        ; objectTypeTargetList=list:{TABLE ; VIEW}
-        #        ; tableExceptList=list:{FOO_TABLE ; prefix:FOO_ ; suffix:_FOO ; contain:_FOO_}
-        #        ; tableTargetList=list:{FOO_TABLE ; prefix:FOO_ ; suffix:_FOO ; contain:_FOO_}
+        #        ; tableExceptList=list:{}
+        #        ; tableTargetList=list:{}
         #        ; columnExceptMap=map:{
-        #            ; FOO_TABLE = list:{FOO_COLUMN ; prefix:FOO_ ; suffix:_FOO ; contain:_FOO_}
+        #            ; NEXT_SCHEMA_PRODUCT = list:{
+        #                ; COLUMN_EXCEPT_TEST
+        #                ; COLUMN_EXCEPT_GEN_ONLY_TEST@gen
+        #            }
         #        }
-        #        ; isSuppressCommonColumn=false
-        #        ; isSuppressProcedure=false
+        #        ; isSuppressCommonColumn=true
+        #        ; isSuppressProcedure=true
         #    }
         #}
 
