@@ -442,6 +442,8 @@ pre.spolicyviodisp {
 <div class="navilinkarea">
 <p class="sublink">
  <a href="#cdef">Classification Definition</a>
+| <a href="#arrangequery">ArrangeQuery List</a>
+| <a href="#outsidesql">OutsideSql List</a>
 </p>
 <p class="sisterlink"><a href="./history-maihamadb.html">to HistoryHTML</a></p>
 </div>
@@ -736,6 +738,8 @@ pre.spolicyviodisp {
 <h2 id="member" title="type=TABLE, primaryKey={MEMBER_ID}, nameLength=6, columnCount=11">
 (会員)MEMBER
 &nbsp;<span class="tablefirstdatetitle">since 2010/06/15</span>
+&nbsp;<span class="arrqycount"><a href="#member_arrqy">(arrangeQuery=1)</a></span>
+&nbsp;<span class="bqpcount"><a href="#member_sql">(outsideSql=9)</a></span>
 </h2>
 <div class="tablecomment MEMBER_comment" data-name="MEMBER"><pre>会員のプロフィールやアカウントなどの基本情報を保持する。
 基本的に物理削除はなく、退会したらステータスが退会会員になる。
@@ -1901,6 +1905,7 @@ pre.spolicyviodisp {
 <h2 id="member_status" title="type=TABLE, primaryKey={MEMBER_STATUS_CODE}, nameLength=13, columnCount=4">
 (会員ステータス)MEMBER_STATUS
 &nbsp;<span class="tablefirstdatetitle">since 2010/06/15</span>
+&nbsp;<span class="bqpcount"><a href="#member_status_sql">(outsideSql=1)</a></span>
 </h2>
 <div class="tablecomment MEMBER_STATUS_comment" data-name="MEMBER_STATUS"><pre>会員のステータスを示す固定的なマスタテーブル。いわゆるテーブル区分値！
 業務運用上で増えることはなく、増減するときはプログラム修正ともなうレベルの業務変更と考えられる。
@@ -2626,6 +2631,7 @@ pre.spolicyviodisp {
 <h2 id="purchase" title="type=TABLE, primaryKey={PURCHASE_ID}, nameLength=8, columnCount=12">
 (購入)PURCHASE
 &nbsp;<span class="tablefirstdatetitle">since 2010/06/15</span>
+&nbsp;<span class="bqpcount"><a href="#purchase_sql">(outsideSql=1)</a></span>
 </h2>
 <div class="tablecomment PURCHASE_comment" data-name="PURCHASE"><pre>一つの商品に対する購入を表現する(購入履歴とも言える)。
 実業務であれば購入詳細というテーブルを作り、「購入という行為」と「その中身（詳細）」を違う粒度のデータとしてそれぞれ管理するのが一般的と言えるでしょう。というか、注文とか請求とかそういうことを考え始めたらもっと複雑になるはずですが、ExampleDBということで割り切っています。</pre></div>
@@ -4019,6 +4025,144 @@ SUMMARY_WITHDRAWAL
 	</tbody>
 </table>
 
+<h2 id="arrangequery">ArrangeQuery List</h2>
+<h3 id="member_arrqy"><a href="#member">MEMBER</a></h3>
+<h4 id="member_arrqy_query">MemberCQ</h4>
+<dl class="arrqylist">
+	<dt>arrangeSpecialServiceMember() <span class="commentdesc">// Arrange the query for selecting service members.</span></dt>
+	<dd>&nbsp;</dd>
+</dl>
+<h2 id="outsidesql">OutsideSql List</h2>
+<h3 id="member_sql"><a href="#member">MEMBER</a></h3>
+<dl class="bqplist">
+	<dt>(The&nbsp;example&nbsp;for&nbsp;select&nbsp;using&nbsp;domain&nbsp;entity)selectDomainMember</dt>
+	<dd>
+		<pre class="commentdesc"> You can use a domain entity as result type
+ if a selected column is one of a domain table.</pre>
+	</dd>
+	<dd class="subinfo">
+		<span class="file">MemberBhv_selectDomainMember.sql</span>
+		<span class="ctet">(df:entity)</span>
+		<span class="pmb">(df:pmb)</span>
+	</dd>
+	<dt>(The&nbsp;example&nbsp;for&nbsp;selecting&nbsp;scalar&nbsp;value)selectLatestFormalizedDatetime</dt>
+	<dd>
+		<pre class="commentdesc"> You can use a scalar type as result type
+ if the select clause has only one column.</pre>
+	</dd>
+	<dd class="subinfo">
+		<span class="file">MemberBhv_selectLatestFormalizedDatetime.sql</span>
+		<span class="ctet">(df:entity)</span>
+		<span class="pmb">(df:pmb)</span>
+	</dd>
+	<dt>(The&nbsp;example&nbsp;for&nbsp;scalar&nbsp;select)selectMemberName</dt>
+	<dd>
+		<pre class="commentdesc"> This SQL is an example for scalar select of outside-SQL
+ and also for the following functions:
+  o auto-detection for alternate boolean methods</pre>
+	</dd>
+	<dd class="subinfo">
+		<span class="file">MemberBhv_selectMemberName.sql</span>
+		<span class="ctet">(df:entity)</span>
+		<span class="pmb">(df:pmb)</span>
+	</dd>
+	<dt>(The&nbsp;example&nbsp;for&nbsp;select&nbsp;using&nbsp;options)selectOptionMember</dt>
+	<dd>
+		<pre class="commentdesc"> This SQL is an example for various options of parameter.
+ Point:
+   o The option of like search (like, likePrefix, likeContain, likeSuffix)
+   o The option of from-to search (fromDate, toDate)
+   o The option of classifications for ParameterBean (ref(...) or cls(...))
+   o The auto option of classifications for CustomizeEntity 
+   o The option of reference to table columns (ref(...))
+   o How to set several options (...|...)</pre>
+	</dd>
+	<dd class="subinfo">
+		<span class="file">MemberBhv_selectOptionMember.sql</span>
+		<span class="ctet">(df:entity)</span>
+		<span class="pmb">(df:pmb)</span>
+	</dd>
+	<dt>(Example&nbsp;for&nbsp;ManualPaging)selectPurchaseMaxPriceMember</dt>
+	<dd>
+		<pre class="commentdesc"> This SQL is an example for manual-paging of outside-SQL
+ and also for the following functions:
+  o auto-detection for parameter-bean's properties
+  o dynamic-size bind parameters by FOR comment
+  o classification property as CDef list</pre>
+	</dd>
+	<dd class="subinfo">
+		<span class="file">MemberBhv_selectPurchaseMaxPriceMember.sql</span>
+		<span class="ctet">(df:entity)</span>
+		<span class="pmb">(df:pmb extends Paging)</span>
+	</dd>
+	<dt>(Example&nbsp;for&nbsp;CursorSelect)selectPurchaseSummaryMember</dt>
+	<dd>
+		<pre class="commentdesc"> This SQL is an example for cursor-select of outside-SQL
+ and also for the following functions:
+  o FOR comment with NEXT</pre>
+	</dd>
+	<dd class="subinfo">
+		<span class="file">MemberBhv_selectPurchaseSummaryMember.sql</span>
+		<span class="ctet">(df:entity *cursor)</span>
+		<span class="pmb">(df:pmb)</span>
+	</dd>
+	<dt>(Example&nbsp;for&nbsp;Simple&nbsp;Select)selectSimpleMember</dt>
+	<dd>
+		<pre class="commentdesc"> This SQL is the most basic example for outsideSql.
+ It uses CustomizeEntity and ParameterBean.</pre>
+	</dd>
+	<dd class="subinfo">
+		<span class="file">MemberBhv_selectSimpleMember.sql</span>
+		<span class="ctet">(df:entity)</span>
+		<span class="pmb">(df:pmb)</span>
+	</dd>
+	<dt>(Example&nbsp;for&nbsp;AutoPaging)selectUnpaidSummaryMember</dt>
+	<dd>
+		<pre class="commentdesc"> This SQL is an example for auto-paging of outside-SQL
+ and also for the following functions:
+  o auto-detection for parameter-bean's properties
+  o primary key setting for LoadReferrer</pre>
+	</dd>
+	<dd class="subinfo">
+		<span class="file">MemberBhv_selectUnpaidSummaryMember.sql</span>
+		<span class="ctet">(df:entity)</span>
+		<span class="pmb">(df:pmb extends Paging)</span>
+	</dd>
+	<dt>(Force&nbsp;Withdrawal&nbsp;Update)updateMemberChangedToWithdrawalForcedly</dt>
+	<dd>
+		<pre class="commentdesc"> This SQL is normal update.</pre>
+	</dd>
+	<dd class="subinfo">
+		<span class="file">MemberBhv_updateMemberChangedToWithdrawalForcedly.sql</span>
+		<span class="pmb">(df:pmb)</span>
+	</dd>
+</dl>
+<h3 id="member_status_sql"><a href="#member_status">MEMBER_STATUS</a></h3>
+<dl class="bqplist">
+	<dt>(The&nbsp;example&nbsp;for&nbsp;out&nbsp;of&nbsp;target&nbsp;in&nbsp;Sql2Entity)truncateMemberStatusInitialized</dt>
+	<dd>
+		<pre class="commentdesc"> The customize-entity keyword 'df:x' means this SQL is
+ out of target in Sql2Entity and OutsideSqlTest task.
+ (for example, for non-rolled-back statements)</pre>
+	</dd>
+	<dd class="subinfo">
+		<span class="file">MemberStatusBhv_truncateMemberStatusInitialized.sql</span>
+		<span class="ctet">(df:x)</span>
+		<span class="pmb">(df:pmb)</span>
+	</dd>
+</dl>
+<h3 id="purchase_sql"><a href="#purchase">PURCHASE</a></h3>
+<dl class="bqplist">
+	<dt>(Example&nbsp;for&nbsp;Cursor&nbsp;and&nbsp;Paging&nbsp;select)selectPaymentCompletePurchase</dt>
+	<dd>
+		<pre class="commentdesc"> This SQL is an example for both cursor-select and manual-paging of outside-SQL</pre>
+	</dd>
+	<dd class="subinfo">
+		<span class="file">PurchaseBhv_selectPaymentCompletePurchase.sql</span>
+		<span class="ctet">(df:entity *cursor)</span>
+		<span class="pmb">(df:pmb extends Paging)</span>
+	</dd>
+</dl>
 
 <h2 id="thanks">Thanks</h2>
 <p>
