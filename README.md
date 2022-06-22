@@ -2,6 +2,8 @@ DBFlute HowTo
 =======================
 How-to project for DBFlute
 
+test github branch now
+
 DBFlute:  
 http://dbflute.seasar.org/
 
