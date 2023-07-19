@@ -70,11 +70,17 @@ import ${table.relationalNullObjectProviderPackage}.*;
 #set ($myEntityInterfaceDef = "${myEntityInterfaceDef}, ColumnNullObjectable")
 #end
 
+#set ($commentForJavaDocValid = $table.isCommentForJavaDocValid())
+#set ($javadocFirstLineRear = "")
+#if ($commentForJavaDocValid)
+#set ($javadocFirstLineRear = " <br>")
+#end
 /**
- * The entity of ${table.basicInfoDispString}. <br>
-#if ($table.isCommentForJavaDocValid())
+ * The entity of ${table.basicInfoDispString}.${javadocFirstLineRear}
+#if ($commentForJavaDocValid)
  * ${table.commentForJavaDoc}
 #end
+#if ($table.isGenerateTableDetailJavaDoc())
  * <pre>
  * [primary-key]
  *     ${table.primaryKeyNameCommaString}
@@ -113,6 +119,7 @@ import ${table.relationalNullObjectProviderPackage}.*;
 #end
  * = = = = = = = = = =/
  * </pre>
+#end
  * @author ${database.classAuthor}
  */
 public abstract class $myClassName extends AbstractEntity implements ${myEntityInterfaceDef} {
